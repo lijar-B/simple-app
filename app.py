@@ -103,12 +103,8 @@ def main():
 
     if choice == "Ohn's Home":
         st.subheader("Ohn's Home")
-        img = Image.open("lijar.jpg")
-        st.image(img, width=200)
-        vid_file = open("ohn.mp4", "rb").read()
-        st.video(vid_file)
         st.subheader("Upload Picture")
-        uploaded_file = st.file_uploader("Choose an image..", type="png")
+        uploaded_file = st.file_uploader("Choose an image..", type="jpg")
         if uploaded_file is not None:
             image = Image.open(uploaded_file)
             st.image(image, caption='Uploaded Image', use_column_width=True)
