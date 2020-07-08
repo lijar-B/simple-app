@@ -9,7 +9,7 @@ verify_ssl = true
 streamlit = "*"
 pandas = "*"
 matplotlib = "*"
-ipykernel = "*"
+pexpect = "*"
 
 [requires]
 python_version = "3.8"
