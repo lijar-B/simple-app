@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 #EDA Pkgs
 import pandas as pd
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use('Agg')
 # from wordcloud import WordCloud,STOPWORDS,ImageColorGenerator
