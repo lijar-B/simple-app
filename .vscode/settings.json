@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "C:\\Users\\DELL-V3568\\.virtualenvs\\simple-app-eYRwDo8-\\Scripts\\python.exe",
+    "python.linting.pylintArgs": ["--load-plugins","pylint-streamlit"]
+}
