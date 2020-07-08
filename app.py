@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 #EDA Pkgs
+import pexpect
 import pandas as pd
 import matplotlib.pyplot as plt 
 import matplotlib
@@ -98,10 +99,10 @@ def main():
 
     if choice == "Ohn's Home":
         st.subheader("Ohn's Home")
-        # img = Image.open("us.jpg")
-        # st.image(img, width=300)
-        # vid_file = open("ohn.mp4", "rb").read()
-        # st.video(vid_file)
+        img = Image.open("us.jpg")
+        st.image(img, width=300)
+        vid_file = open("ohn.mp4", "rb").read()
+        st.video(vid_file)
        
         result = view_all_notes()
         
