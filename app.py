@@ -16,8 +16,8 @@ conn = sqlite3.connect('o.db')
 c = conn.cursor()
 
 #Functons
-def create_ohntable():
-    c.execute('CREATE TABLE IF NOT EXISTS ohntable(category TEXT,title TEXT,content TEXT,postdate DATE)')
+# def create_ohntable():
+c.execute('CREATE TABLE IF NOT EXISTS ohntable(category TEXT,title TEXT,content TEXT,postdate DATE)')
 
 def add_data(category,title,content,postdate):
     c.execute('INSERT INTO ohntable(category,title,content,postdate) VALUES (?,?,?,?)',(category,title,content,postdate))
@@ -131,7 +131,7 @@ def main():
 
     elif choice == "Add Ohn's Posts":
         st.subheader("Add contents")
-        create_ohntable()
+        # create_ohntable()
         blog_category = st.text_input("Enter category", max_chars=50)
         blog_title = st.text_input("Enter Post Title")
         blog_content = st.text_area("Post Here",height=200)
